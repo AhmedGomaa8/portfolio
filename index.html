@@ -58,13 +58,14 @@
     <div class="about">
       <div class="container">
         <div class="main-head">
-          <h2>About</h2>
-          <h4>About Me</h4>
+          <h2>About Me</h2>
         </div>
         <div class="about-info">
           <div class="left-info">
             <h3>Hello I'm Ahmed Gomaa Web Developer</h3>
-            <a href="#">Download Resume <i class="fa-solid fa-download"></i></a>
+            <a href="cv.pdf" download=""
+              >Download Resume <i class="fa-solid fa-download"></i
+            ></a>
           </div>
           <div class="right-info">
             <p>
@@ -87,7 +88,6 @@
       <div class="container">
         <div class="main-head">
           <h2>Services</h2>
-          <h4>Services</h4>
         </div>
         <div class="boxs">
           <div class="box">
@@ -122,30 +122,38 @@
     <div class="projects">
       <div class="container">
         <div class="main-head">
-          <h2>Projects</h2>
-          <h4>My Projects</h4>
+          <h2>My Projects</h2>
         </div>
         <div class="boxs">
           <div class="box">
-            <img src="images/food4u.jpg" alt="" />
+            <div class="image">
+              <img src="images/food4u.jpg" alt="" />
+            </div>
+
             <div class="info">
-              <h4>Food4U Website(Pure)</h4>
+              <h4>Food4U Website</h4>
               <a href="https://ahmedgomaa8.github.io/Food4U/"
                 >Live <i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
           </div>
           <div class="box">
-            <img src="images/travel.jpg" alt="" />
+            <div class="image">
+              <img src="images/travel.jpg" alt="" />
+            </div>
+
             <div class="info">
-              <h4>Travel Website(Pure)</h4>
+              <h4>Travel Website</h4>
               <a href="https://ahmedgomaa8.github.io/Travel/"
                 >Live <i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
           </div>
           <div class="box">
-            <img src="images/login.jpg" alt="" />
+            <div class="image">
+              <img src="images/login.jpg" alt="" />
+            </div>
+
             <div class="info">
               <h4>Simple Login System</h4>
               <a href="https://ahmedgomaa8.github.io/login/"
@@ -157,6 +165,39 @@
       </div>
     </div>
     <!-- end projects -->
+    <!-- start contact -->
+    <div class="contact">
+      <div class="container">
+        <div class="main-head">
+          <h2>Contact Me</h2>
+        </div>
+        <div class="inputs">
+          <form action="">
+            <input class="input" type="text" placeholder="Your Name" required />
+            <input
+              class="input"
+              type="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              class="input"
+              placeholder="Write Your Message Here..."
+              required
+            ></textarea>
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end contact -->
+    <!-- start footer -->
+    <div class="footer">
+      <div class="container">
+        <p class="copyright">&copy; Ahmed All Right Reserved</p>
+      </div>
+    </div>
+    <!-- end footer -->
     <script src="script.js"></script>
   </body>
 </html>
