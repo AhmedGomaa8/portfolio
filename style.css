@@ -52,6 +52,89 @@ body {
     width: 1170px;
   }
 }
+.slide {
+  transform: translateY(250px);
+  opacity: 0;
+}
+@media (max-width: 767px) {
+  .slide {
+    transform: translateY(0);
+  }
+}
+.slide:nth-child(1) {
+  transition-duration: 1.3s;
+}
+.slide:nth-child(2) {
+  transition-duration: 1.4s;
+}
+.slide:nth-child(3) {
+  transition-duration: 1.6s;
+}
+.slide:nth-child(4) {
+  transition-duration: 1.8s;
+}
+.slide:nth-child(5) {
+  transition-duration: 2s;
+}
+.slide.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade {
+  opacity: 0;
+  transition: 1s;
+}
+.fade.appear {
+  opacity: 1;
+}
+.about-slide:nth-child(1) {
+  transform: translateX(-220px);
+  opacity: 0;
+  transition: 1.8s;
+}
+
+.about-slide:nth-child(2) {
+  transform: translateX(220px);
+  opacity: 0;
+  transition: 1.8s;
+}
+@media (max-width: 767px) {
+  .about-slide:nth-child(1) {
+    transform: translateX(0);
+  }
+  .about-slide:nth-child(2) {
+    transform: translateX(0);
+  }
+}
+.about-slide.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+.project-slide {
+  transform: translateX(300px);
+  opacity: 0;
+}
+@media (max-width: 767px) {
+  .project-slide {
+    transform: translateX(0);
+  }
+}
+.project-slide:nth-child(1) {
+  transition-duration: 1s;
+}
+.project-slide:nth-child(2) {
+  transition-duration: 1.4s;
+}
+.project-slide:nth-child(3) {
+  transition-duration: 1.6s;
+}
+.project-slide:nth-child(4) {
+  transition-duration: 1.8s;
+}
+.project-slide.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
 /* start header */
 .header {
   background: linear-gradient(to bottom, #181a21, #1e212a, #181a21);
@@ -145,7 +228,7 @@ body {
 }
 .header .text .info {
   text-align: center;
-  margin-top: 150px;
+  margin-top: 170px;
 }
 .header .text .info > span {
   display: block;
@@ -198,7 +281,7 @@ body {
   color: var(--main-color);
 }
 .header .info img {
-  width: 175px;
+  width: 210px;
   border-radius: 50%;
 }
 /* end header */
@@ -206,6 +289,7 @@ body {
 .about {
   padding-top: var(--main-padding);
   padding-bottom: var(--main-padding);
+  overflow: hidden;
 }
 .about .about-info {
   display: flex;
@@ -288,7 +372,7 @@ body {
 .services .boxs .box {
   width: calc((100% / 3) - 20px);
   text-align: center;
-  background-color: #06071069;
+  background-color: #060710;
   transition: var(--main-transition);
   padding: 30px 10px;
   border-radius: 5px;
@@ -302,7 +386,7 @@ body {
 .services .boxs .box:hover {
   transform: scale(1.1);
   box-shadow: 0px 0px 7px 3px #ffffff05;
-  background-color: #060710;
+  background-color: #0a0c19;
 }
 @media (max-width: 767px) {
   .services .boxs .box {
@@ -333,6 +417,7 @@ body {
 .projects {
   padding-top: var(--main-padding);
   padding-bottom: var(--main-padding);
+  overflow: hidden;
 }
 .projects .boxs {
   display: flex;
