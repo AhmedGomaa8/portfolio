@@ -40,3 +40,15 @@ faders.forEach((fade) => {
 projectSlide.forEach((slide) => {
   observer.observe(slide);
 });
+
+//nav onscroll
+
+let nav = document.getElementById("nav-bar");
+
+window.addEventListener("scroll", () => {
+  if (this.scrollY >= 400) {
+    nav.classList.add("fixed");
+  } else {
+    nav.classList.remove("fixed");
+  }
+});
