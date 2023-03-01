@@ -133,6 +133,9 @@ body {
 .project-slide:nth-child(4) {
   transition-duration: 1.8s;
 }
+.project-slide:nth-child(5) {
+  transition-duration: 2s;
+}
 .project-slide.appear {
   transform: translateX(0);
   opacity: 1;
