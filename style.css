@@ -136,6 +136,9 @@ body {
 .project-slide:nth-child(5) {
   transition-duration: 2s;
 }
+.project-slide:nth-child(6) {
+  transition-duration: 2.2s;
+}
 .project-slide.appear {
   transform: translateX(0);
   opacity: 1;
@@ -495,6 +498,10 @@ body {
   font-size: 28px;
   margin: 20px 0;
 }
+.projects .boxs .box .info .links {
+  display: flex;
+  justify-content: center;
+}
 .projects .boxs .box .info a {
   color: var(--text-color);
   text-decoration: none;
@@ -502,6 +509,11 @@ body {
   background-color: var(--main-color);
   transition: var(--main-transition);
   border-radius: 5px;
+  display: block;
+  width: fit-content;
+}
+.projects .boxs .box .info a:first-child {
+  margin-right: 10px;
 }
 .projects .boxs .box .info a:hover {
   color: #fff;
